@@ -8,6 +8,6 @@ namespace GeometricShapes
 {
     class Square : Rect
     {
-        public Square(int SideLen) : base (SideLen, SideLen) { }
+        public Square(int SideLen) : base (SideLen, SideLen) { }  // the parameter is put into Rect as Rect(3, 3) and goes through the rect class
     }
 }

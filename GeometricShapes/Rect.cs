@@ -17,7 +17,7 @@ namespace GeometricShapes
             return LeftSide * Bottom;
         }
         
-        public Rect(int SideA, int SideB) : base(SideA, SideB, SideA, SideB)
+        public Rect(int SideA, int SideB) : base(SideA, SideB, SideA, SideB)//the parameter from square is passed from square into here so it would be rect(3, 3) which would be passed into quad
         {
             this.LeftSide = SideA;
             this.RightSide = SideA;

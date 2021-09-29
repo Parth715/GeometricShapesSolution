@@ -6,30 +6,25 @@ namespace GeometricShapes
     {
         static void Main(string[] args)
         {
-            var s1 = new Square()
-            {
-                Side = 5
-            };
-            Console.WriteLine($"Perimeter of the square is {s1.Perimeter()}");
-            Console.WriteLine($"Area of the square is {s1.Area()}");
-            var r1 = new Rect()
-            {
-                SideLen1 = 3,
-                SideLen2 = 5,
-            };
-            Console.WriteLine($"Perimeter of the Rectangle is {r1.Perimeter()}");
-            Console.WriteLine($"Area of the rectangle is {r1.Area()}");
-            var q1 = new Quad()
-            {
-                LeftSide = 3,
-                RightSide = 4,
-                Bottom = 5,
-                Top = 6
-            };
+            var s1 = new Square(3);
+           
+            var s2 = new Square(5);
+            s1.Print();
+            s2.Print();
+            //=======================================================================================
             
-            
-            Console.WriteLine($"Perimeter of the quadrilateral is {q1.Perimeter()}");
+            var r1 = new Rect(3, 5);
+           
+            var r2 = new Rect(3, 7);
+            r1.Print();
+            r2.Print();
 
+    //==============================================================================================
+            
+            var q1 = new Quad(3, 4, 5, 6);
+
+            q1.Print();
+            
         }
     }
 }

@@ -13,9 +13,20 @@ namespace GeometricShapes
         public int Bottom { get; set; }
         public int Top { get; set; }
 
+        public void Print()
+        {
+            Console.WriteLine($"Perimeter: {Perimeter()}");
+        }
+
         public int Perimeter()
         {
             return LeftSide + RightSide + Bottom + Top;
+        }
+        public Quad(int LeftSide, int RightSide, int Bottom, int Top) {
+            this.LeftSide = LeftSide;
+            this.RightSide = RightSide;
+            this.Bottom = Bottom;
+            this.Top = Top;
         }
     }
 }
